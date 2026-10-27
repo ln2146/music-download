@@ -7,7 +7,30 @@
 
 两张图采用一致的黑胶唱片、音频波形与下载符号，配色为石墨黑、暖白与荧光绿。文案中的“17 个平台适配”表示适配范围，不代表所有平台在任何条件下都可下载。实际可用性见项目测试记录。
 
-## 当前封面：完整黑胶与平台图标
+## 当前封面：面向 Agent 的介绍
+
+使用内置 image_gen 编辑上一版封面：将工具名称与技术说明替换为“让 Agent 直接搜索与下载音乐”，把“17 个平台适配”移至底部图标区域。保留完整黑胶、音频波形、下载符号及全部平台图标与名称。平台图标沿用 AI 重绘版。
+
+参考图：`readme-cover.png`（完整黑胶与平台图标版）。
+
+```text
+Use case: text-localization / precise marketing image edit.
+Input image is the EDIT TARGET, the current music-download README cover. Make a surgical typography and layout refinement, preserving the 2:1 horizontal format and almost all visual identity and artwork.
+Preserve the exact large title "music-download", the headline "一句指令，让音乐落地。", warm ivory background, realistic black vinyl record with acid-lime label, glowing waveform and download arrow. Preserve the completely visible unobstructed record outer rim, its position and photographic quality. Preserve ALL 17 existing platform icons and their exact names, in the same two-row order. Do not redraw or redesign the icons unnecessarily.
+
+REQUESTED CHANGES:
+1. Remove both left-hand small lines "Claude Code / Codex" and "17 个平台适配 · JSON CLI" completely.
+2. In their place, use a single clear restrained supporting sentence, verbatim: "让 Agent 直接搜索与下载音乐". Make it smaller than the headline, near-black, comfortably spaced, aligned with the large title. Do not include names of specific agents or technical words such as JSON or CLI anywhere in the image.
+3. Move the phrase "17 个平台适配" to the bottom platform directory, as a compact but legible left-aligned section heading immediately below the thin divider and above the two icon rows. Add enough vertical space to fit it cleanly; slightly increase canvas height if necessary, maintaining a horizontal banner. The heading must not touch any icon or the vinyl; retain generous breathing room.
+4. Keep all existing platform labels precisely:
+row 1: 酷我, 酷狗, 网易云, QQ音乐, 咪咕, 千千, 汽水, 5sing, Apple Music
+row 2: Deezer, Jamendo, Joox, Qobuz, SoundCloud, StreetVoice, Spotify, TIDAL
+Every name appears exactly once. The bottom section is separate from the hero, with no overlap. Keep recognizable colorful small icons and near-black text, on plain ivory without cards. No changes to platform count.
+
+Final artwork only. No red annotation box, no screenshot borders, no browser UI, no watermark, no new promotional claims. Target a cleaner, more universal Agent-facing README cover.
+```
+
+## 历史封面：完整黑胶与平台图标
 
 使用内置 image_gen 编辑平台名单版封面。将黑胶与平台目录分区，完整显示唱片外缘，底部两行展示全部 17 个平台的图标与名称。平台图标为 AI 重绘，并非从官方矢量源文件直接导入。
 

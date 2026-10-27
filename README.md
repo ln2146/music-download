@@ -1,18 +1,41 @@
 # music-download
 
 <p align="center">
-  <img src="assets/readme-cover.png" alt="music-download：一句指令，让音乐落地。适配酷我、酷狗、网易云、QQ音乐、咪咕、千千、汽水、5sing、Apple Music、Deezer、Jamendo、Joox、Qobuz、SoundCloud、StreetVoice、Spotify、TIDAL。" width="100%">
+  <img src="assets/readme-cover.png" alt="music-download：一句指令，让音乐落地。让 Agent 直接搜索与下载音乐，17 个平台适配。" width="100%">
 </p>
 
-**供 Claude Code、Codex 使用的音乐搜索与下载 skill。** 支持跨平台搜索、歌曲版本选择、单曲与批量下载、歌单解析，结果保存到本地。
+**让 AI Agent 直接搜索与下载音乐。** 一个自带运行脚本的 skill，支持跨平台搜索、歌曲版本选择、单曲与批量下载、歌单解析，结果保存到本地。
 
-你可以指定平台，也可以让 agent 根据需求选择。底层直接调用 musicdl，拥有独立的 Python 环境，无需桌面应用。
+你可以指定平台，也可以让 Agent 根据需求选择。底层直接调用 musicdl，拥有独立的 Python 环境，无需桌面应用。
+
+Agent 需要能够读取本地文件、执行 Shell 命令、联网并保存文件。支持 skill 的工具可以从技能目录加载；其他具备这些能力的 Agent，也可以先读取 [SKILL.md](SKILL.md)，再按说明调用脚本。
 
 ## 安装
 
-需要 **Git 和 uv**。选择对应的安装目录执行，脚本会创建 Python 3.13 环境并安装固定版本依赖。当前实测环境为 macOS arm64，安装脚本使用 POSIX shell。
+需要 **Git 和 uv**。安装脚本会创建 Python 3.13 环境并安装固定版本依赖。当前实测环境为 macOS arm64，脚本使用 POSIX shell。
 
-### Claude Code
+### 交给 Agent 安装
+
+将下面的指令发给具备本地命令执行能力的 Agent：
+
+> 帮我安装 https://github.com/ln2146/music-download 到你使用的技能目录，阅读 SKILL.md 并执行 scripts/setup.sh，然后运行 scripts/music sources 确认安装结果。如果你没有技能目录，就安装到当前工作目录，后续按 SKILL.md 调用。
+
+### 手动安装
+
+在希望保存 skill 的目录中执行：
+
+```sh
+git clone https://github.com/ln2146/music-download.git music-download
+sh music-download/scripts/setup.sh
+music-download/scripts/music sources
+```
+
+然后让 Agent 读取安装目录中的 `SKILL.md`，按说明搜索、解析歌单或下载歌曲。自动发现 skill 的目录因工具而异，下面提供两种安装示例。
+
+<details>
+<summary>Claude Code / Codex 安装目录示例</summary>
+
+**Claude Code**
 
 ```sh
 git clone https://github.com/ln2146/music-download.git ~/.claude/skills/music-download
@@ -20,7 +43,7 @@ sh ~/.claude/skills/music-download/scripts/setup.sh
 ~/.claude/skills/music-download/scripts/music sources
 ```
 
-### Codex
+**Codex**
 
 ```sh
 git clone https://github.com/ln2146/music-download.git ~/.codex/skills/music-download
@@ -28,13 +51,17 @@ sh ~/.codex/skills/music-download/scripts/setup.sh
 ~/.codex/skills/music-download/scripts/music sources
 ```
 
-自定义了 `CODEX_HOME` 时，使用对应的 `skills` 目录。目标目录已有安装时，先检查并保留本地修改。两边分别执行 `setup.sh`；迁移目录后重新创建环境，不直接复制已有 `.venv`。
+自定义了 `CODEX_HOME` 时，使用对应的 `skills` 目录。
+
+</details>
+
+目标目录已有安装时，先检查并保留本地修改。每个安装目录分别执行 `setup.sh`；迁移目录后重新创建环境，不直接复制已有 `.venv`。
 
 ## 使用
 
-安装后，在新会话中直接提出需求：
+安装并让 Agent 加载 `SKILL.md` 后，直接提出需求：
 
-**让 agent 选择平台并下载**
+**让 Agent 选择平台并下载**
 
 > 使用 music-download，帮我下载周杰伦演唱的《晴天》，平台你来选，保存到当前项目的已下载音乐目录。
 
@@ -46,7 +73,7 @@ sh ~/.codex/skills/music-download/scripts/setup.sh
 
 > 使用 music-download，解析这个歌单并列出歌曲，下载我选中的几首。
 
-仅要求搜索时只搜索；明确要求下载且匹配清楚时继续执行。同名歌、翻唱或现场版有歧义时，agent 会展示候选。完整调用规则见 [SKILL.md](SKILL.md)。
+仅要求搜索时只搜索；明确要求下载且匹配清楚时继续执行。同名歌、翻唱或现场版有歧义时，Agent 会展示候选。完整调用规则见 [SKILL.md](SKILL.md)。
 
 <details>
 <summary>进阶：直接调用命令行</summary>
@@ -67,7 +94,7 @@ sh ~/.codex/skills/music-download/scripts/setup.sh
 ./scripts/music playlist --sources streetvoice --url 'https://www.streetvoice.cn/svmusic_cn/playlists/880153/' --timeout 300
 ```
 
-脚本要求显式传入搜索平台。自然语言请求未指定平台时，由 agent 决定参数；脚本不内置固定的平台优先顺序或自动替代源。
+脚本要求显式传入搜索平台。自然语言请求未指定平台时，由 Agent 决定参数；脚本不内置固定的平台优先顺序或自动替代源。
 
 </details>
 
