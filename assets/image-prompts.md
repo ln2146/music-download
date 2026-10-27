@@ -7,7 +7,35 @@
 
 两张图采用一致的黑胶唱片、音频波形与下载符号，配色为石墨黑、暖白与荧光绿。文案中的“17 个平台适配”表示适配范围，不代表所有平台在任何条件下都可下载。实际可用性见项目测试记录。
 
-## 共用提示词
+## 平台名单版修订
+
+本次使用内置 image_gen 编辑两张原图，在封面和宣传海报上直接加入全部 17 个平台名称。以下为提交的完整修订提示词，参考图分别为仓库中的原版封面和海报。
+
+### 封面
+
+参考图：`readme-cover.png`（首版）。
+
+```text
+Use case: text-localization / precise marketing image edit. Edit the provided existing music-download artwork. Preserve the original visual identity: graphite-black vinyl record, luminous acid-lime center and audio waveform, warm ivory background, refined editorial typography. Preserve the exact project name "music-download", original Chinese headline, "Claude Code / Codex", and the wording "17 个平台适配". The single requested change is to clearly show the FULL list of all 17 platform names in the artwork. The names are plain typography, not logos, and must each appear exactly once, with exact spelling and Chinese characters. List (three intentional rows):
+酷我 · 酷狗 · 网易云 · QQ音乐 · 咪咕 · 千千 · 汽水 · 5sing
+Apple Music · Deezer · Jamendo · Joox · Qobuz
+SoundCloud · StreetVoice · Spotify · TIDAL
+Do not omit, duplicate, replace, misspell or invent any platform. Do not say all platforms are always available or add membership/free/lossless guarantees. Typeset the list with strong contrast, generous enough line spacing, and large readable text, especially at phone size. Do not cover the list with the record, waveform or any other object. Slightly adjust scale and spacing to fit the new information while preserving the premium original composition. No fake screenshots or QR codes. Target: existing wide README cover. Keep it landscape. Preserve the left large title "music-download" and tagline "一句指令，让音乐落地。" and the sculptural vinyl on the right. Add an integrated warm-ivory footer region across the lower portion of the banner for the three platform rows. It is acceptable to give the banner slightly more height and move the disc upward so ALL names remain legible. Make the platform list a real intentional part of the graphic, not a sticker, and do not use microprint. Group it directly with "17 个平台适配". Keep the black/ivory/lime color palette and high-end audio aesthetic.
+```
+
+### 宣传海报
+
+参考图：`promo-poster.png`（首版）。
+
+```text
+Use case: text-localization / precise marketing image edit. Edit the provided existing music-download artwork. Preserve the original visual identity: graphite-black vinyl record, luminous acid-lime center and audio waveform, warm ivory background, refined editorial typography. Preserve the exact project name "music-download", original Chinese headline, "Claude Code / Codex", and the wording "17 个平台适配". The single requested change is to clearly show the FULL list of all 17 platform names in the artwork. The names are plain typography, not logos, and must each appear exactly once, with exact spelling and Chinese characters. List (three intentional rows):
+酷我 · 酷狗 · 网易云 · QQ音乐 · 咪咕 · 千千 · 汽水 · 5sing
+Apple Music · Deezer · Jamendo · Joox · Qobuz
+SoundCloud · StreetVoice · Spotify · TIDAL
+Do not omit, duplicate, replace, misspell or invent any platform. Do not say all platforms are always available or add membership/free/lossless guarantees. Typeset the list with strong contrast, generous enough line spacing, and large readable text, especially at phone size. Do not cover the list with the record, waveform or any other object. Slightly adjust scale and spacing to fit the new information while preserving the premium original composition. No fake screenshots or QR codes. Target: existing vertical promotional poster. Preserve the top title "music-download", headline "搜歌、选曲、下载。", supporting line "交给你的 Agent。", and exact footer URL "github.com/ln2146/music-download". Rebalance the lower ivory area to add the three platform rows under "17 个平台适配" and above "Claude Code / Codex" and the GitHub URL. Reduce the central disc and waveform modestly or increase the ivory footer area to give the names real space. Keep a portrait poster composition with large readable type, clear margins and clean separation between platform rows. Do not compress the 17 names into a tiny line.
+```
+
+## 首版共用提示词
 
 以下共用文本分别与后面的对应图片提示词拼接后提交：
 

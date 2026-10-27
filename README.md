@@ -1,7 +1,7 @@
 # music-download
 
 <p align="center">
-  <img src="assets/readme-cover.png" alt="music-download：一句指令，让音乐落地。" width="100%">
+  <img src="assets/readme-cover.png" alt="music-download：一句指令，让音乐落地。适配酷我、酷狗、网易云、QQ音乐、咪咕、千千、汽水、5sing、Apple Music、Deezer、Jamendo、Joox、Qobuz、SoundCloud、StreetVoice、Spotify、TIDAL。" width="100%">
 </p>
 
 **供 Claude Code、Codex 使用的音乐搜索与下载 skill。** 支持跨平台搜索、歌曲版本选择、单曲与批量下载、歌单解析，结果保存到本地。
