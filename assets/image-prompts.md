@@ -7,6 +7,33 @@
 
 两张图采用一致的黑胶唱片、音频波形与下载符号，配色为石墨黑、暖白与荧光绿。文案中的“17 个平台适配”表示适配范围，不代表所有平台在任何条件下都可下载。实际可用性见项目测试记录。
 
+## 当前封面：完整黑胶与平台图标
+
+使用内置 image_gen 编辑平台名单版封面。将黑胶与平台目录分区，完整显示唱片外缘，底部两行展示全部 17 个平台的图标与名称。平台图标为 AI 重绘，并非从官方矢量源文件直接导入。
+
+参考图：`readme-cover.png`（平台名单版）。宣传海报沿用上一版。
+
+```text
+Use case: compositing / ads-marketing.
+Edit target: the supplied music-download banner. Recompose it into a polished horizontal GitHub README cover, about 2:1 aspect ratio, high resolution. Preserve the warm ivory, rich black and acid-lime identity, photographic vinyl groove detail, confident black typography, and the concept of music waveform flowing into a download arrow.
+
+PRIMARY FIX: The vinyl must be completely visible as a circular object, with its entire outer rim inside the image and generous clear space around it. No text, footer, translucent sheet, platform list, labels or divider can cover any part of the record. Give the top hero its own roughly 70% height, and the platform directory its own roughly 30% height BELOW the record, separated by a thin quiet rule and spacious margin. The record, its soft studio shadow and waveform must end above this footer.
+
+TOP HERO: Left half is typography only, right half is a single black vinyl record with a lime center, glossy grooves, and a delicate luminous lime waveform ending in a download arrow to the right. Keep the whole record and arrow comfortably within the right half, and away from every letter. Use a full, near-front-on circular record, not a giant cropped disc. On left render exactly:
+"music-download" as the bold primary wordmark on one line.
+"一句指令，让音乐落地。" as the secondary Chinese line.
+"Claude Code / Codex"
+"17 个平台适配 · JSON CLI"
+Large but restrained typography. Plenty of breathing room.
+
+PLATFORM FOOTER: Replace the current dense text-only platform lists with a clean evenly spaced directory of small recognizable platform brand/app icons PLUS their short names. Two horizontal rows, 9 items in first row and 8 items in second row, second row visually balanced. Each item is a recognizable small brand symbol above or beside its exact name, on the plain ivory surface. Use original brand colors only as restrained small accents in the symbols, keep labels near-black. No rounded cards, no panels, no sticker clutter, no pill backgrounds. Icons must help recognition; keep names because obscure platform icons alone are ambiguous. Every platform appears exactly once. Exact order:
+row 1: 酷我, 酷狗, 网易云, QQ音乐, 咪咕, 千千, 汽水, 5sing, Apple Music
+row 2: Deezer, Jamendo, Joox, Qobuz, SoundCloud, StreetVoice, Spotify, TIDAL
+Use familiar recognizable platform marks (e.g. red Netease music spiral, QQ Music multicolor note, Apple Music note, Spotify three arcs, SoundCloud cloud waveform, TIDAL diamond cluster). Keep all 17 names legible, including Apple Music and SoundCloud, and don't replace any name with just a symbol.
+
+Final artwork only, edge to edge. No webpage screenshot frame, no browser UI, no watermark. No extra slogans, no claim that every track can be downloaded. Highest priority: completely unobstructed vinyl, disciplined separation of hero and platform footer, accurate exact text and complete 17-item directory.
+```
+
 ## 平台名单版修订
 
 本次使用内置 image_gen 编辑两张原图，在封面和宣传海报上直接加入全部 17 个平台名称。以下为提交的完整修订提示词，参考图分别为仓库中的原版封面和海报。
