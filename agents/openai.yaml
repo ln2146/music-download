@@ -1,0 +1,4 @@
+interface:
+  display_name: "音乐搜索与下载"
+  short_description: "支持十七个平台的音乐搜索、歌单解析和本地下载，由用户或智能体选择平台"
+  default_prompt: "使用 $music-download 帮我搜索音乐并下载到指定目录。"
