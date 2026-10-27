@@ -89,26 +89,8 @@ Apple Music · Deezer · Jamendo · Joox · Qobuz · SoundCloud · StreetVoice �
 
 账号凭据由用户在本地配置。状态包含原生歌曲对象快照和私有日志，可能带有临时授权信息，不应分享状态目录或加载他人提供的 pickle、状态库。详细字段见 [平台与配置](references/platforms.md)。
 
-## 测试
-
-2026-10-27 的本机测试中，**11 个平台**完成真实搜索与下载，**14 首歌曲**从一个 StreetVoice 歌单中解析为候选，**4 项离线集成测试**通过。
-
-其余 6 个平台当次遇到网络、接口、超时或账号条件限制。完整的平台结果、测试参数与限制见 [实测记录](references/test-results.md)。记录反映当次环境，不构成持续可用性保证。
-
-在仓库根目录运行离线集成测试：
-
-```sh
-.venv/bin/python -m unittest discover -s tests -v
-```
-
-测试覆盖平台映射、专用对象快照、本地 HTTP 下载与批量部分失败、未知候选错误。
-
 ## 项目来源与许可
 
 核心平台能力来自 [musicdl](https://github.com/CharlesPikachu/musicdl)，早期需求参考了 [MrsEWE44/musicDownload](https://github.com/MrsEWE44/musicDownload) 桌面项目的功能范围。
 
 本仓库不附带歌曲文件、共享账号或第三方解析服务的凭据。依赖项目有各自的许可证；musicdl 2.14.2 随包提供 PolyForm Noncommercial License 1.0.0，使用时请阅读其许可证。
-
----
-
-宣传素材：[README 封面](assets/readme-cover.png) · [竖版海报](assets/promo-poster.png) · [图片生成说明与提示词](assets/image-prompts.md)
