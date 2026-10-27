@@ -7,6 +7,44 @@
 
 两张图采用一致的黑胶唱片、音频波形与下载符号，配色为石墨黑、暖白与荧光绿。文案中的“17 个平台适配”表示适配范围，不代表所有平台在任何条件下都可下载。实际可用性见项目测试记录。
 
+## 当前竖版海报：面向 Agent 的介绍
+
+使用内置 image_gen 编辑原竖版海报，并以当前横版封面作为平台图标与文案方向的参考。移除具体 Agent 工具名称，使用“让 Agent 直接搜索与下载音乐”；完整展示黑胶，将“17 个平台适配”及三行图标与名称放在底部独立区域。保留仓库地址。平台图标沿用 AI 重绘版。
+
+输入图 1：`promo-poster.png`（平台名单版，编辑目标）。输入图 2：`readme-cover.png`（当前横版封面，参考图）。
+
+```text
+Use case: compositing / ads-marketing.
+Input image 1 is the EDIT TARGET: the existing vertical music-download promotional poster.
+Input image 2 is the DESIGN REFERENCE for the current matching horizontal cover, especially its platform icons and universal Agent-facing positioning.
+Create the refined final portrait poster, about 3:4, high resolution. Preserve the original poster's striking near-black upper region and warm ivory lower region, acid-lime accent, bold editorial typography, and tactile photorealistic vinyl. This must look like a polished independent music technology release poster.
+
+PRIMARY CHANGES:
+Remove "Claude Code / Codex" entirely and do not name any specific agent tools or add JSON/CLI. Market the skill as something an Agent uses directly.
+Replace the dense text-only 17-platform list with a neatly spaced directory of platform icons AND short names, matching the icon designs in image 2. Keep "17 个平台适配" immediately above the directory in the lower ivory region.
+Keep the entire vinyl silhouette visible and fully inside the poster, with no headline, platform list, footer or opaque patch occluding its outer rim. Scale the record modestly to create real space. Make three clear zones: headline, vinyl hero, platform directory. Never superimpose platform content on the record.
+
+EXACT TEXT AND HIERARCHY:
+Top bold brand wordmark: "music-download", one line; music in ivory and download in acid lime, as original.
+Large Chinese headline: "搜歌、选曲、下载。"
+Supporting sentence: "让 Agent 直接搜索与下载音乐"
+Lower directory heading: "17 个平台适配"
+Footer: "github.com/ln2146/music-download", clearly legible and exactly spelled.
+Do not include the old English tiny decorative word stack. No extra claims or additional copy.
+
+COMPOSITION:
+Top approximately 23%: clear bold typography on rich near-black with generous side margins.
+Middle approximately 36%: one full realistic black vinyl disc with acid-lime center, delicately glowing audio waveform emerging from it and ending in a clean download arrow. Physical grooves, studio light, cast shadow, sophisticated depth. Keep the record away from the typography and directory; do not crop it. No excessive sparks or noise.
+Bottom approximately 41%: warm ivory, with heading, three rows of small colorful platform icons with exact black labels, then quiet URL footer. No cards, rounded panels or pills. Equal optical icon sizing, intentional baseline alignment, enough room for longer English names. Icon directory should be calm and crisp, not oversized app stickers.
+Use 6 icons in first row, 6 in second, and 5 in a centered third row. Each platform appears exactly once, with exact labels and this order:
+row 1: 酷我, 酷狗, 网易云, QQ音乐, 咪咕, 千千
+row 2: 汽水, 5sing, Apple Music, Deezer, Jamendo, Joox
+row 3: Qobuz, SoundCloud, StreetVoice, Spotify, TIDAL
+Use the matching platform symbols from image 2. Every name must remain legible; the icon alone is insufficient.
+
+Constraints: final portrait artwork only, no browser/screenshot framing, no watermark, no QR codes, no claims of universal/free/unlimited availability. Keep the black/ivory/lime identity, accurate project URL, full unobstructed vinyl and all 17 platform icon-label pairs.
+```
+
 ## 当前封面：面向 Agent 的介绍
 
 使用内置 image_gen 编辑上一版封面：将工具名称与技术说明替换为“让 Agent 直接搜索与下载音乐”，把“17 个平台适配”移至底部图标区域。保留完整黑胶、音频波形、下载符号及全部平台图标与名称。平台图标沿用 AI 重绘版。
