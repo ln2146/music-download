@@ -16,9 +16,9 @@ Your Agent needs to read local files, run Shell commands, access the internet an
 
 ## Video introduction
 
-A 15-second introduction to music-download.
+**music-download — One command. Music, downloaded.**
 
-https://github.com/user-attachments/assets/06d8fb53-6d07-459c-bda9-67ec564fd78a
+https://github.com/user-attachments/assets/51048840-03d2-44b1-bbdb-de32c9d69690
 
 ## Installation
 

@@ -16,9 +16,9 @@ Agent 需要能够读取本地文件、执行 Shell 命令、联网并保存文�
 
 ## 视频介绍
 
-15 秒了解 music-download。
+**music-download｜一句指令，让音乐落地。**
 
-https://github.com/user-attachments/assets/06d8fb53-6d07-459c-bda9-67ec564fd78a
+https://github.com/user-attachments/assets/51048840-03d2-44b1-bbdb-de32c9d69690
 
 ## 安装
 
