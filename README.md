@@ -14,6 +14,12 @@
 
 Agent 需要能够读取本地文件、执行 Shell 命令、联网并保存文件。支持 skill 的工具可以从技能目录加载；其他具备这些能力的 Agent，也可以先读取 [SKILL.md](SKILL.md)，再按说明调用脚本。
 
+## 视频介绍
+
+15 秒了解 music-download。
+
+https://github.com/user-attachments/assets/8dcbf5ce-aa80-4767-963c-1bdcba4e9663
+
 ## 安装
 
 需要 **Git 和 uv**。安装脚本会创建 Python 3.13 环境并安装固定版本依赖。当前实测环境为 macOS arm64，脚本使用 POSIX shell。

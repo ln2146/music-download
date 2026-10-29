@@ -14,6 +14,12 @@ Find music for a video, look for a specific recording, or work through a playlis
 
 Your Agent needs to read local files, run Shell commands, access the internet and save files. Tools with skill support can load it from their skills directory. Other Agents with these capabilities can read [SKILL.md](SKILL.md) and follow its instructions to call the scripts.
 
+## Video introduction
+
+A 15-second introduction to music-download.
+
+https://github.com/user-attachments/assets/8dcbf5ce-aa80-4767-963c-1bdcba4e9663
+
 ## Installation
 
 You need **Git and uv**. The setup script creates a Python 3.13 environment and installs pinned dependencies. The environment tested so far is macOS arm64; the script uses POSIX shell.
