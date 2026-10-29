@@ -3,9 +3,40 @@
 制作日期：2026-10-27。使用内置 image_gen 工具生成，未使用 API/CLI 回退。图片用于项目介绍，是品牌插画，不是软件界面截图。
 
 - `readme-cover.png`：横向 README 封面。
+- `readme-cover-en.png`：英文 README 封面，与中文版保持一致的黑胶及平台图标布局。
 - `promo-poster.png`：适合单独分享的竖版宣传海报。
 
 两张图采用一致的黑胶唱片、音频波形与下载符号，配色为石墨黑、暖白与荧光绿。文案中的“17 个平台适配”表示适配范围，不代表所有平台在任何条件下都可下载。实际可用性见项目测试记录。
+
+## 英文封面本地化（2026-10-29）
+
+使用内置 image_gen 编辑当前中文封面，仅本地化文案与平台名称。保留完整黑胶、独立平台区域及全部 17 个图标；平台图标沿用 AI 重绘版。
+
+参考图：`readme-cover.png`。输出：`readme-cover-en.png`。
+
+```text
+Use case: text-localization.
+Edit target: the supplied current music-download README cover. Create its polished ENGLISH localized companion. Preserve the exact horizontal 2:1 format and existing artwork: warm ivory background, near-black large music-download wordmark on the left, fully visible realistic black vinyl on the right with lime center, lime waveform and download arrow, and the separate 17-platform icon directory below. Do not move any platform content over the record; keep it entirely unobstructed. Preserve the existing 17 icon designs and their order. Change lettering only and adjust type size/line breaks within its current zones to fit the English.
+
+Exact text:
+Main title stays "music-download".
+Replace the large Chinese headline with two clean lines:
+"One command."
+"Music, downloaded."
+Make these large but comfortably below the wordmark, with no crowding or overlap. Retain original left alignment and generous space.
+The smaller supporting line becomes:
+"Let your Agent find and download music."
+This can wrap naturally within the left text area.
+The directory heading becomes:
+"17 platform adapters"
+
+Exact platform labels for the existing icons, each appearing once:
+row 1: Kuwo, Kugou, NetEase Music, QQ Music, Migu, Qianqian, Soda Music, 5sing, Apple Music
+row 2: Deezer, Jamendo, Joox, Qobuz, SoundCloud, StreetVoice, Spotify, TIDAL
+Use small near-black labels with balanced baselines; break NetEase Music onto two short lines if needed. Keep every icon-label pair legible and separated. Do not replace platform names, omit any icon, or invent platform logos.
+
+No Chinese characters remain. No other text, no specific agent tool names, no new badges, no unlimited/free/always-available promises, no watermark. Highest priority: the same original brand composition and full vinyl, accurate readable English lettering, and all 17 platform pairs.
+```
 
 ## 当前竖版海报：面向 Agent 的介绍
 

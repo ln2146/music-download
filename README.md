@@ -4,9 +4,13 @@
   <img src="assets/readme-cover.png" alt="music-download：一句指令，让音乐落地。让 Agent 直接搜索与下载音乐，17 个平台适配。" width="100%">
 </p>
 
-**让 AI Agent 直接搜索与下载音乐。** 一个自带运行脚本的 skill，支持跨平台搜索、歌曲版本选择、单曲与批量下载、歌单解析，结果保存到本地。
+<p align="center">
+  <a href="README.md"><b>中文</b></a> · <a href="README_EN.md">English</a>
+</p>
 
-你可以指定平台，也可以让 Agent 根据需求选择。底层直接调用 musicdl，拥有独立的 Python 环境，无需桌面应用。
+**让 AI Agent 直接搜索与下载音乐。** music-download 是一个自带运行脚本的多平台音乐 skill，支持搜索歌曲、选择版本、单曲与批量下载、解析歌单，结果保存到本地。
+
+做视频找配乐、查找某首歌的指定版本，或整理歌单时，直接把需求交给 Agent。你可以指定平台，也可以让它根据需求选择。底层调用 musicdl，使用独立的 Python 环境，无需桌面应用。
 
 Agent 需要能够读取本地文件、执行 Shell 命令、联网并保存文件。支持 skill 的工具可以从技能目录加载；其他具备这些能力的 Agent，也可以先读取 [SKILL.md](SKILL.md)，再按说明调用脚本。
 
